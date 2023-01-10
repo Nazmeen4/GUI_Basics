@@ -1,0 +1,24 @@
+import java.awt.*;
+public class frame extends Frame {
+    frame(){
+        super("Frame");
+        setLayout(new FlowLayout());
+        Button b=new Button("Paasword");
+        Button b1=new Button("Username");
+        TextField t=new TextField(10);
+        TextField t1=new TextField(10);
+        Button b2=new Button("Submit");
+        add(b);
+        add(t);
+        add(b1);
+        add(t1);
+        add(b2);
+        setVisible(true);
+        setSize(200,200);
+        setLocation(100,100);
+    }
+    public static void main(String args[]){
+        new frame();
+    }
+    
+}
